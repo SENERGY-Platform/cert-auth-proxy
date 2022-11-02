@@ -14,8 +14,8 @@
     ssl_verify_client on;
 
     # Use OCSP to check for client certificate revocation
-    ssl_ocsp on;
-    resolver 192.0.2.1;
+    #ssl_ocsp on;
+    #resolver 192.0.2.1;
 
     access_log /var/log/nginx/access_log;
     error_log /var/log/nginx/error.log debug;

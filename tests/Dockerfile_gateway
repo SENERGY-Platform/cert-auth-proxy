@@ -1,0 +1,5 @@
+FROM python:3.8
+
+HEALTHCHECK CMD curl --fail http://localhost:8000 || exit 1   
+
+CMD ["python", "-m", "http.server"]

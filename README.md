@@ -28,4 +28,7 @@ Client and server certificates provided in the tests directory. Keep in mind tha
 
 # Deployment
 This service needs a connection to the kong proxy which is set by `KONG_PROXY_HOST` and `KONG_PROXY_PORT`.
-The server certificate, the corresponding private key and the root CA certificate are expected to be under `/etc/certs/`.
+The server certificate, the corresponding private key and the root CA certificate are expected to be under:
+- Server certificate: `/etc/certs/server.crt`
+- Server private key: `/etc/certs/private.key`
+- Root CA certificate: `/etc/certs/ca.crt`

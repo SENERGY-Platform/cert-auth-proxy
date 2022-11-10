@@ -9,15 +9,16 @@ services:
   test:
     container_name: test
     build:
-      context: .
-      dockerfile: ./Dockerfile
+      context: ../..
+      dockerfile: ./tests/Dockerfile
     image: test
     depends_on:
       - cert_auth
   cert_auth:
     container_name: cert_auth
+    image: cert_auth
     build:
-      context: ..
+      context: ../..
       dockerfile: ./build/Dockerfile
       target: test
     environment:
@@ -28,6 +29,6 @@ services:
   gateway:
     container_name: gateway
     build:
-      context: .
-      dockerfile: ./Dockerfile_gateway
+      context: ../..
+      dockerfile: ./tests/Dockerfile_gateway
     image: gateway

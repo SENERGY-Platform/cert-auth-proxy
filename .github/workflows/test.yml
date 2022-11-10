@@ -8,8 +8,8 @@ jobs:
       - name: Setup network
         run: docker network create test-network
       - name: Build the stack
-        run: docker compose -f tests/docker-compose.yml build
+        run: docker compose -f deploy/test/docker-compose.yml build
       - name: Start the stack
-        run: docker compose -f tests/docker-compose.yml up -d cert_auth gateway
+        run: docker compose -f deploy/test/docker-compose.yml up -d cert_auth gateway
       - name: Run test container
-        run: docker compose -f tests/docker-compose.yml run test
+        run: docker compose -f deploy/test/docker-compose.yml run test

@@ -10,7 +10,7 @@
     ssl_certificate_key /etc/certs/private.key;
 
     # client certificate
-    ssl_client_certificate /etc/ca/ca.crt;
+    ssl_client_certificate /etc/certs/ca.crt;
     ssl_verify_client on;
 
     # Use OCSP to check for client certificate revocation

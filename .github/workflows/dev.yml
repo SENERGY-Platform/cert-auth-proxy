@@ -35,8 +35,8 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            smartenergyplatform/cert_auth_proxy:dev
-            ghcr.io/senergy-platform/cert_auth_proxy:dev
+            smartenergyplatform/cert-auth-proxy:dev
+            ghcr.io/senergy-platform/cert-auth-proxy:dev
           target: prod
       #- name: Deploy
       #  uses: wei/curl@v1

@@ -38,7 +38,7 @@ jobs:
             smartenergyplatform/cert_auth_proxy:dev
             ghcr.io/senergy-platform/cert_auth_proxy:dev
           target: prod
-      - name: Deploy
-        uses: wei/curl@v1
-        with:
-          args: -X POST -u ${{ secrets.RANCHER_TOKEN }} ${{ secrets.RANCHER_URL }}${{ secrets.RANCHER_SERVICE }}?action=redeploy
+      #- name: Deploy
+      #  uses: wei/curl@v1
+      #  with:
+      #    args: -X POST -u ${{ secrets.RANCHER_TOKEN }} ${{ secrets.RANCHER_URL }}${{ secrets.RANCHER_SERVICE }}?action=redeploy

@@ -1,9 +1,9 @@
-name: 'DEV Deployment'
+name: 'Prod Deployment'
 
 on:
   push:
     branches:
-      - dev
+      - master
   workflow_dispatch:
 
 jobs:
@@ -35,8 +35,8 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            smartenergyplatform/certificates-auth-proxy:dev
-            ghcr.io/senergy-platform/certificates-auth-proxy:dev
+            smartenergyplatform/certificates-auth-proxy:prod
+            ghcr.io/senergy-platform/certificates-auth-proxy:prod
           target: prod
       #- name: Deploy
       #  uses: wei/curl@v1

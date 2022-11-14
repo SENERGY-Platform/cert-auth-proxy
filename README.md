@@ -6,6 +6,10 @@
     <img src="https://github.com/SENERGY-Platform/cert-auth-proxy/actions/workflows/dev.yml/badge.svg" alt="Deployment Dev" />
 </a>
 
+<a href="https://github.com/SENERGY-Platform/cert-auth-proxy/actions/workflows/prod.yml" rel="nofollow">
+    <img src="https://github.com/SENERGY-Platform/cert-auth-proxy/actions/workflows/prod.yml/badge.svg" alt="Deployment Prod" />
+</a>
+
 # CERT-AUTH-PROXY
 This NGINX web server acts as a reverse proxy to authenticate requests with client certificates. Requests are then forwarded to the kong proxy to exchange a JWT user token.
 

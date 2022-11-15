@@ -9,9 +9,9 @@ services:
     ports:
       - 8443:443
     volumes:
-      - ~/Desktop/projects/mgw_local_certificates/ca_certs/ca.crt:/etc/certs/ca.crt
-      - ~/Desktop/projects/mgw_local_certificates/server_certs/server.crt:/etc/certs/server.crt
-      - ~/Desktop/projects/mgw_local_certificates/server_certs/private.key:/etc/certs/private.key
+      - ~/Desktop/projects/mgw_local_certificates/ca_certs/ca.crt:/etc/ca_certs/ca.crt
+      - ~/Desktop/projects/mgw_local_certificates/server_certs/server.crt:/etc/server_certs/server.crt
+      - ~/Desktop/projects/mgw_local_certificates/server_certs/private.key:/etc/server_certs/private.key
     environment:
       KONG_PROXY_HOST: ca_cert_kong_service
       KONG_PROXY_PORT: 5000

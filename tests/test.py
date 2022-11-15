@@ -1,6 +1,5 @@
 import unittest
 import requests 
-import os 
 
 def make_request(client_cert_path, client_private_key_path):
     caPath = '/etc/certs/ca_certs/ca.crt'
